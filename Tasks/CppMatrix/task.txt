@@ -1,0 +1,15 @@
+Реализовать на языке С++ в main.cpp структуру Matrix с функциями внутри:
+input(string fileName)
+input(int rows, int columns) - с консоли
+generateRandom(int rows, int columns)
+output()
+output(string fileName)
+determinant()
+
+Вместо printf/scanf используем cout/cin.
+Вместо malloc/free используем new/delete.
+Вместо fprintf/fscanf используем ofstream и потоковый вывод.
+
+Продемонстрировать работу с подобного рода структурами.
+В main создаём динамический массив структур Matrix, генерируем,
+считаем определители, выводим в консоль и в файл.

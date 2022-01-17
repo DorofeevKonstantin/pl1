@@ -1,0 +1,8 @@
+1.Поиск запущенных процессов. Ваша задача написать аналог findProcesses\1 или findProcesses\2
+Потенциально полезные для вас функции:
+CreateToolhelp32Snapshot
+EnumProcessModules
+Примеры: findProcesses\1.exe, findProcesses\2.exe
+
+2.Написать программу, два экземпляра которой невозможно запустить.
+Примеры: protectedProgram\stupidProtect.exe, protectedProgram\normProtect.exe
