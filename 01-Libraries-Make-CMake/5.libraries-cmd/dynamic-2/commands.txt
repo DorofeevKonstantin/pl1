@@ -1,0 +1,6 @@
+cl math.c /LD
+cl /c main.c
+link main.obj /OUT:prog.exe
+
+
+https://docs.microsoft.com/en-us/windows/win32/dlls/using-run-time-dynamic-linking

@@ -1,2 +1,0 @@
-Реализовать свою структуру данных динамический массив.
-Операции: add, remove, removeAll, print, unique, find, count, sort.

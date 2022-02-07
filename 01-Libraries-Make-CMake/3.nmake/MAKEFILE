@@ -1,0 +1,12 @@
+# Sample makefile
+
+all: main.exe
+
+main.exe: main.obj utils.obj
+	link main.obj utils.obj /OUT:main.exe
+	
+main.obj: main.c
+	cl /c main.c
+	
+utils.obj: utils.c
+	cl /c utils.c

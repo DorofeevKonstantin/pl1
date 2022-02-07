@@ -1,0 +1,10 @@
+Написать класс Timer, замеряющий время выполнения участка кода.
+Использование:
+Timer timer;
+timer.start();
+...
+timer.stop(); // выводится в консоль в миллисекундах
+timer.stop("s"); // в секундах
+timer.stop("m"); // в минутах
+timer.stop("full"); // максимально подробно
+timer.exec_time(std::function ...)

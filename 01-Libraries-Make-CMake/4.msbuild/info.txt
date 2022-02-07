@@ -1,0 +1,1 @@
+https://docs.microsoft.com/ru-ru/cpp/build/msbuild-visual-cpp?view=msvc-170

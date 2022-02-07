@@ -1,0 +1,6 @@
+cl math.c /LD
+cl /c main.c
+link main.obj math.lib /OUT:prog.exe
+
+
+https://docs.microsoft.com/ru-ru/cpp/build/dlls-in-visual-cpp?view=msvc-170

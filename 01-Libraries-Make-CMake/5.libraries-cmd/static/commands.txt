@@ -1,0 +1,5 @@
+cl /c math.c
+lib math.obj
+cl /c main.c
+link main.obj math.lib
+main.exe

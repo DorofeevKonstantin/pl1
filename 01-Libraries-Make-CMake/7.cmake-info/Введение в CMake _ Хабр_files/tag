@@ -1,0 +1,19 @@
+rowr = window.rowr || {cmd: []};
+(function (c, cb) {
+  var d = document, s = d.createElement('script'), x, t, q = [];
+  s.type = 'text/javascript';
+  s.async = 1;
+  s.src = 'https://cdn-plus.roxot-panel.com/roxot-wrapper/js/roxot-wrapper.js';
+  for (x in c) q.push(x + '=' + c[x].join(','));
+  s.src += q.join('&');
+  t = document.getElementsByTagName('head')[0];
+  t.insertBefore(s, t.firstChild);
+  if (cb) {
+    cb.call();
+  }
+})({}, function () {
+  rowr.cmd.push(function () {
+    rowr.setConfig({"prebid":{"path":"https:\/\/cdn-plus.roxot-panel.com\/roxot-wrapper\/js\/techmedia-prebid2.44.1.js","adjustment":{"mytarget":0.1,"rtbhouse":0.85,"otm":0.85,"rubicon":0.8,"getintent":0.8}},"adfox":{"hb":{"biddersMap":{"myTarget":"1168310","betweenDigital":"1167588","criteo":"1171975"},"timeout":700}},"domain":"no-referrer","refreshTimeSeconds":100000});
+    rowr.setAdsConfig({"6cc6bf81-e922-4d54-8a30-8393b53e3351":{"adServersConfig":[{"name":"prebid_dfp","tagId":"\/106064978\/AdX_Plus\/habr.com\/Right_rectangle_top_aa__","sizes":[[300,250],[300,300],[160,600]],"options":{"bids":[{"bidder":"between","params":{"w":300,"h":250,"s":3426056}},{"bidder":"getintent","params":{"pid":66,"tid":"300x250_alfadart"}},{"bidder":"rtbhouse","params":{"region":"prebid-eu","publisherId":"495e960a7a9aa8b2838b"}},{"bidder":"ix","params":{"siteId":"370793","size":[300,250]}},{"bidder":"otm","params":{"tid":"1915"}},{"bidder":"mytarget","params":{"placementId":"660789"}},{"bidder":"criteo","params":{"zoneId":1464275}},{"bidder":"rubicon","params":{"accountId":"15636","siteId":"242500","zoneId":"1502012"}},{"bidder":"appnexus","params":{"placementId":18109944}}]}},{"name":"yandex","tagId":"R-A-451811-18","sizes":[[300,250],[300,300],[160,600]]}],"details":{"tagId":"6cc6bf81-e922-4d54-8a30-8393b53e3351","tagTitle":"Right_rectangle_top_aa","placement":"Right_rectangle_top_aa"}}});
+  });
+});
