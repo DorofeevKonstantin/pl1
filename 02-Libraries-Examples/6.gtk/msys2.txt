@@ -1,0 +1,13 @@
+https://www.gtk.org/docs/installations/windows/
+1.install msys2
+
+https://stdin.top/posts/gtk4-on-windows/
+2.pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gtk4 mingw-w64-x86_64-pkg-config
+
+add to system path
+C:\\msys64\\mingw64\\include
+C:\\msys64\\mingw64\\bin
+C:\\msys64\\mingw64\\lib
+
+3.run C:\msys64\mingw64.exe
+gcc -o main main.c `pkg-config --cflags --libs gtk4`

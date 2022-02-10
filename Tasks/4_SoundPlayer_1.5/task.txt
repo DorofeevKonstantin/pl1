@@ -1,0 +1,2 @@
+Реализовать простой графический аудио-плеер для воспроизведения музыки.
+Функционал : start,stop,pause,resume,faster,slower,louder,quiet,rewind.

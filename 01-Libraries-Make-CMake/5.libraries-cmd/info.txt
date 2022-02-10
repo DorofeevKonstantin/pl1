@@ -1,0 +1,12 @@
+статические библиотеки :
+utils.c -> utils.obj
+		-> .lib / .a
+link ->
++ : ready to use
+- : big size
+
+
+динамические библиотеки :
+math.c	 -> .lib + math.dll / .so
++ : small size
+- : problems with distr, .net framework 6.0+  DLL HELL

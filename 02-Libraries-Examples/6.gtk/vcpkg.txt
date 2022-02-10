@@ -1,0 +1,20 @@
+https://vcpkg.io/en/getting-started.html
+download vcpkg from github
+vcpkg install gtk:x64-windows // --triplet x64-windows
+vcpkg integrate install
+vcpkg integrate project
+"-DCMAKE_TOOLCHAIN_FILE=C:/_libs/vcpkg-master/scripts/buildsystems/vcpkg.cmake"
+set x64 triplet as default
+
+https://www.collabora.com/news-and-blog/blog/2021/03/18/build-and-run-gtk-4-applications-with-visual-studio/
+
+I myself agree it should default to x86 on 32-bit windows and x64 on 64-bit windows, but we would need to have the Visual Studio team make the same change to maintain the customer experience.
+I set the default triplet using one or more of the provided methods:
+set the environment variable VCPKG_DEFAULT_TRIPLET
+from command prompt set VCPKG_DEFAULT_TRIPLET=x64-windows
+from powershell prompt ${env:VCPKG_DEFAULT_TRIPLET} = "x64-windows"
+add --triplet x64-windows to the command line
+Example: \.vcpkg.exe install boost[core,mpi] --triplet x64-windows
+concatenate :x64-windows after the port[features]
+Example: .\vcpkg.exe install boost[core,mpi]:x64-windows
+I myself have also created a series of powershell scripts using powershell core to maintain the various instances of vcpkg being used, triplet type needed, production or test environment, version of C/C++ ie Visual Studio, sets the various other vcpkg environment variables and or directory paths, etc.
