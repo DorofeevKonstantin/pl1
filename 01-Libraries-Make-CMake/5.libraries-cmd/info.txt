@@ -1,4 +1,4 @@
-статические библиотеки :
+static libraries :
 utils.c -> utils.obj
 		-> .lib / .a
 link ->
@@ -6,7 +6,7 @@ link ->
 - : big size
 
 
-динамические библиотеки :
-math.c	 -> .lib + math.dll / .so
+dynamic libraries :
+math.c -> .lib? + math.dll / .so
 + : small size
-- : problems with distr, .net framework 6.0+  DLL HELL
+- : problems with distr, DLL HELL

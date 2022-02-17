@@ -1,7 +1,7 @@
 Raylib		https://www.raylib.com/
 Mpir		https://mpir.org/
 Libsdl		https://www.libsdl.org/
-Gtk		https://www.gtk.org/
+Gtk			https://www.gtk.org/
 CSFML		https://www.sfml-dev.org/ (CSFML is binding for cpp library)
 WinApi		https://docs.microsoft.com/ru-ru/windows/win32/learnwin32/learn-to-program-for-windows
 Libgcrypt	https://gnupg.org/software/libgcrypt/

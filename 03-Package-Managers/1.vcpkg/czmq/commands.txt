@@ -1,0 +1,19 @@
+https://vcpkg.io/en/getting-started.html
+download vcpkg from github
+
+vcpkg.exe install czmq:x64-windows-static
+vcpkg integrate install
+vcpkg integrate project
+get code example from https://zeromq.org/languages/c/
+
+create and configure project :
+preprocessor definitions : ZMQ_STATIC
+triplet : (x64-windows-static)
+
+#ifdef _DEBUG
+#pragma comment(lib,"libzmq-mt-sgd-libzmq-mt-s-4_3_4.lib")
+#else
+#pragma comment(lib,"libzmq-mt-s-4_3_4.lib")
+#endif
+#pragma comment(lib,"Ws2_32.lib")
+#pragma comment(lib,"Iphlpapi.lib")

@@ -1,0 +1,29 @@
+Cloning existing repository:
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+See commits:
+git log
+git log --oneline --graph --decorate
+git show <commit>
+
+Create repository:
+git init
+git status
+git add .
+git commit -m "First commit"
+
+basic c/c++ .gitignore problems on windows:
+ANSI (utf8 without bom)
+bad content
+
+Git reset:
+git reset --hard <commit-hash>
+
+Git revert:
+git revert HEAD~3
+Revert the changes specified by the fourth last commit in HEAD and create a new commit with the reverted changes.
+Так как мы отменили самый последний произведенный коммит, мы смогли использовать HEAD в качестве аргумента для отмены.
+Мы можем отменить любой произвольной коммит в истории, указав его хэш-значение.
+git revert -n master~5..master~2
+Revert the changes done by commits from the fifth last commit in master (included) to the third last commit in master
+(included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.

@@ -1,0 +1,5 @@
+[requires]
+glfw/3.3.6
+
+[generators]
+cmake

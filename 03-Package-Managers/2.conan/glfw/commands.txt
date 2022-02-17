@@ -1,0 +1,17 @@
+install conan
+https://docs.conan.io/en/latest/installation.html
+analyze commands
+https://docs.conan.io/en/latest/getting_started.html
+
+conan search
+conan search glfw --remote=conancenter
+conan inspect glfw/3.3.6
+conan profile new default --detect
+conan profile list
+conan profile show default // compiler=Visual Studio ?
+
+mkdir build
+cd build
+conan install ..
+create CMakeLists.txt
+use cmake

@@ -1,0 +1,4 @@
+conan search libcurl --remote=conancenter
+mkdir build
+cd build
+conan install ..
