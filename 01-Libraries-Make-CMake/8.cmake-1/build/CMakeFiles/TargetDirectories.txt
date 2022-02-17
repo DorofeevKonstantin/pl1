@@ -1,0 +1,3 @@
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/8.cmake-1/build/CMakeFiles/cmake1.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/8.cmake-1/build/CMakeFiles/ALL_BUILD.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/8.cmake-1/build/CMakeFiles/ZERO_CHECK.dir

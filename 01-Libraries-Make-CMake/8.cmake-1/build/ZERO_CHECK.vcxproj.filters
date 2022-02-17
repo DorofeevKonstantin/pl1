@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\_main\_univer\Documents\Chelgu\PP\Prog\C\rep\01-Libraries-Make-CMake\8.cmake-1\build\CMakeFiles\7f9d394e591792ed65203eeaa9d4f705\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D477EFC0-4043-3A1D-9CB1-2A5D82CB133B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

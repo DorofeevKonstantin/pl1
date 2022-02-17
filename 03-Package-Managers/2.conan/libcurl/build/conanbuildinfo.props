@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="Conan-RootDirs">
+    <Conan-libcurl-Root>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\8e813ca8510e89adf3aade599f9fc1ca6a55555a</Conan-libcurl-Root>
+    <Conan-openssl-Root>$(USERPROFILE)\.conan\data\openssl\1.1.1m\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab</Conan-openssl-Root>
+    <Conan-zlib-Root>$(USERPROFILE)\.conan\data\zlib\1.2.11\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab</Conan-zlib-Root>
+  </PropertyGroup>
+  <PropertyGroup Label="ConanVariables">
+    <ConanPackageName></ConanPackageName>
+    <ConanPackageVersion></ConanPackageVersion>
+    <ConanCompilerFlags></ConanCompilerFlags>
+    <ConanLinkerFlags></ConanLinkerFlags>
+    <ConanPreprocessorDefinitions>CURL_STATICLIB=1;</ConanPreprocessorDefinitions>
+    <ConanIncludeDirectories>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\8e813ca8510e89adf3aade599f9fc1ca6a55555a\include;$(USERPROFILE)\.conan\data\openssl\1.1.1m\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab\include;$(USERPROFILE)\.conan\data\zlib\1.2.11\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab\include;</ConanIncludeDirectories>
+    <ConanResourceDirectories>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\8e813ca8510e89adf3aade599f9fc1ca6a55555a\res;</ConanResourceDirectories>
+    <ConanLibraryDirectories>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\8e813ca8510e89adf3aade599f9fc1ca6a55555a\lib;$(USERPROFILE)\.conan\data\openssl\1.1.1m\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab\lib;$(USERPROFILE)\.conan\data\zlib\1.2.11\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab\lib;</ConanLibraryDirectories>
+    <ConanBinaryDirectories>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\8e813ca8510e89adf3aade599f9fc1ca6a55555a\bin;$(USERPROFILE)\.conan\data\openssl\1.1.1m\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab\bin;</ConanBinaryDirectories>
+    <ConanLibraries>libcurl.lib;libssl.lib;libcrypto.lib;zlib.lib;</ConanLibraries>
+    <ConanSystemDeps>crypt32.lib;ws2_32.lib;advapi32.lib;user32.lib;</ConanSystemDeps>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\8e813ca8510e89adf3aade599f9fc1ca6a55555a\bin;$(USERPROFILE)\.conan\data\openssl\1.1.1m\_\_\package\3fb49604f9c2f729b85ba3115852006824e72cab\bin;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ConanIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ConanPreprocessorDefinitions)%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>$(ConanCompilerFlags) %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ConanLibraryDirectories)%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ConanLibraries)%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(ConanSystemDeps)%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>$(ConanLinkerFlags) %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ConanIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ConanIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ConanPreprocessorDefinitions)%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>$(ConanCompilerFlags) %(AdditionalOptions)</AdditionalOptions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

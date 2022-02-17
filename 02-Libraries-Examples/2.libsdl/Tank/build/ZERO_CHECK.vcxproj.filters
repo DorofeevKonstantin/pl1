@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\_main\_univer\Documents\Chelgu\PP\Prog\C\rep\02-Libraries-Examples\2.libsdl\Tank\build\CMakeFiles\1815038222a2ff0311e379501d669a50\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{076A8BCE-DEB0-38E6-BED8-86402A25638E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

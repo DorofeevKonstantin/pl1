@@ -1,3 +1,5 @@
 https://git-scm.com/docs/git-init
 https://git-scm.com/docs/git-commit
 https://git-scm.com/docs/git-reset
+
+https://github.com/github/gitignore

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\_main\_univer\Documents\Chelgu\PP\Prog\C\rep\01-Libraries-Make-CMake\8.cmake-1\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\_main\_univer\Documents\Chelgu\PP\Prog\C\rep\01-Libraries-Make-CMake\8.cmake-1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{03627975-AFF6-325A-8DBD-09B510F45F37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

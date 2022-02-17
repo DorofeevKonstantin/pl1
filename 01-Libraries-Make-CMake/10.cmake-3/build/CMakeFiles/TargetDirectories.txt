@@ -1,0 +1,4 @@
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/10.cmake-3/build/CMakeFiles/cmake3.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/10.cmake-3/build/CMakeFiles/ALL_BUILD.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/10.cmake-3/build/CMakeFiles/ZERO_CHECK.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/01-Libraries-Make-CMake/10.cmake-3/build/library/CMakeFiles/library.dir

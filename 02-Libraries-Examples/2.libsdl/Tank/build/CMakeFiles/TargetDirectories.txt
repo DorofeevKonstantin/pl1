@@ -1,0 +1,3 @@
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/02-Libraries-Examples/2.libsdl/Tank/build/CMakeFiles/Tank.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/02-Libraries-Examples/2.libsdl/Tank/build/CMakeFiles/ALL_BUILD.dir
+C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/02-Libraries-Examples/2.libsdl/Tank/build/CMakeFiles/ZERO_CHECK.dir
