@@ -1,0 +1,24 @@
+Adding an existing project to GitHub using the command line:
+git init
+git add .
+git commit -m "First commit"
+git remote add origin remote repository URL
+git remote -v
+git push -u origin master
+
+Cloning a repository:
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+Get remote changes:
+only see: git log HEAD..remote/branch
+get:
+git fetch
+git log origin/master
+git merge origin/master
+
+Reset hard to remote:
+git checkout master
+git reset --hard e3f1e37
+git push --force origin master
+# Then to prove it (it won't print any diff)
+git diff master..origin/master

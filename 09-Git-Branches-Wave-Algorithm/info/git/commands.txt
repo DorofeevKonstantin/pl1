@@ -1,0 +1,30 @@
+git branch unstable
+git checkout unstable
+
+git checkout master
+
+Create the branch on your local machine and switch in this branch :
+$ git checkout -b [name_of_your_new_branch]
+
+Push the branch on github :
+$ git push origin [name_of_your_new_branch]
+
+You can see all the branches created by using :
+$ git branch -a
+
+Конфликты слияния (merge conflict).
+Для бинарных файлов: только выбрать версию А или Б (или другие, если octomerge).
+Бывает, что бинарные файлы Git воспринимает как текстовые и тогда merge их необратимо портит. Это прежде всего относится к файлам office-форматов.
+Для текстовых файлов: пара вариантов:
+Вручную разрешить конфликты
+После merge в файле появятся куски из обеих сливаемых версий, как-то так:
+
+<<<<<<< HEAD  
+содержимое файла из первой ветки
+======
+содержимое файла из второй ветки  
+>>>>>>> otherbranch
+Нужно будет вручную отредактировать конфликтный файл (или файлы), при этом не забывая удалить метки, оставленные Git (>>>>>>> otherbranch). Затем:
+
+git add conflicting-file-name.txt
+git commit -m "merged A and B"
