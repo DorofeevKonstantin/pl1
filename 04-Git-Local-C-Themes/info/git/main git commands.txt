@@ -20,6 +20,7 @@ Git reset:
 git reset --hard <commit-hash>
 
 Git revert:
+git revert HEAD~0 // revert last commit
 git revert HEAD~3
 Revert the changes specified by the fourth last commit in HEAD and create a new commit with the reverted changes.
 Так как мы отменили самый последний произведенный коммит, мы смогли использовать HEAD в качестве аргумента для отмены.
