@@ -15,7 +15,7 @@ game* createGame()
 	game* g = (game*)malloc(sizeof(game));
 	if (g)
 	{
-		clrscr();
+		clrScr();
 		g->snakesCount = 1;
 		g->snakes = (snake*)malloc(g->snakesCount * sizeof(snake));
 		if (g->snakes)
@@ -36,7 +36,7 @@ game* createGame()
 }
 static void drawSymbol(coordinates* c, char symbol)
 {
-	gotoxy(c->x, c->y);
+	gotoXY(c->x, c->y);
 	printf_s("%c", symbol);
 }
 static char getKeyPressed()
@@ -69,7 +69,7 @@ static int analyzeInput(game* g)
 }
 void mainLoop(game* g)
 {
-	hidecursor();
+	hideCursor();
 	drawField(&(g->field));
 	drawApple(&(g->apple));
 	for (size_t i = 0; i < g->snakesCount; i++)
@@ -101,7 +101,7 @@ void mainLoop(game* g)
 }
 void destroyGame(game* g)
 {
-	clrscr();
+	clrScr();
 	if (g)
 	{
 		for (size_t i = 0; i < g->snakesCount; i++)

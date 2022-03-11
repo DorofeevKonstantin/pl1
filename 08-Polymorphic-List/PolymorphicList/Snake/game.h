@@ -5,7 +5,7 @@
 #include "field.h"
 #include "snake.h"
 
-struct Game
+typedef struct
 {
 	size_t snakesCount;
 	field field;
@@ -13,9 +13,7 @@ struct Game
 	snake* snakes;
 	size_t sleepValue;
 	int needRestart;
-};
-
-typedef struct Game game;
+} game;
 
 game* createGame();
 void mainLoop(game*);

@@ -17,7 +17,7 @@ struct Node
 
 typedef struct Node node;
 
-struct List
+typedef struct
 {
 	node* head;
 	node* tail;
@@ -25,9 +25,7 @@ struct List
 	fPtrCopy copyDataFunction;
 	fPtrPrint printDataFunction;
 	fPtrFree freeDataFunction;
-};
-
-typedef struct List list;
+} list;
 
 list* createList(fPtrCopy, fPtrPrint, fPtrFree);
 void pushBack(list*, void*);

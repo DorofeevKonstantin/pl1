@@ -4,16 +4,13 @@
 #include "apple.h"
 #include "../List/list.h"
 
-enum Direction { right, down, left, up };
-typedef enum Direction direction;
+typedef enum { right, down, left, up } direction;
 
-struct Snake
+typedef struct
 {
 	list* elements;
 	direction direction;
-};
-
-typedef struct Snake snake;
+} snake;
 
 void initSnake(snake*, coordinates*);
 void move(snake*);

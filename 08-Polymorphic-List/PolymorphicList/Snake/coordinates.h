@@ -1,9 +1,7 @@
 #pragma once
 
-struct Coordinates
+typedef struct
 {
 	int x;
 	int y;
-};
-
-typedef struct Coordinates coordinates;
+} coordinates;

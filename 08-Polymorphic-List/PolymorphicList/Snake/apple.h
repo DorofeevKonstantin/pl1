@@ -3,12 +3,11 @@
 #include "coordinates.h"
 #include "field.h"
 
-struct Apple
+typedef struct
 {
 	coordinates position;
-};
+} apple;
 
-typedef struct Apple apple;
 
 void generateApple(field*, apple*);
 void drawApple(apple*);

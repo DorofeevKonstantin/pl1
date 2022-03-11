@@ -108,7 +108,7 @@ void saveOldTail(snake* s, coordinates* oldTail)
 void drawElement(void* data)
 {
 	coordinates* coord = (coordinates*)data;
-	gotoxy(coord->x, coord->y);
+	gotoXY(coord->x, coord->y);
 	printf_s("*");
 }
 void drawSnake(snake* s)
@@ -118,7 +118,7 @@ void drawSnake(snake* s)
 void drawSnakeHead(snake* s)
 {
 	coordinates* headPosition = (coordinates*)getHeadValue(s->elements);
-	gotoxy(headPosition->x, headPosition->y);
+	gotoXY(headPosition->x, headPosition->y);
 	printf_s("*");
 }
 void destroySnake(snake* s)

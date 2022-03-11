@@ -11,6 +11,6 @@ void generateApple(field* f, apple* a)
 }
 void drawApple(apple* a)
 {
-	gotoxy(a->position.x, a->position.y);
+	gotoXY(a->position.x, a->position.y);
 	printf_s("@");
 }

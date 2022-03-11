@@ -7,16 +7,16 @@ void drawField(field* f)
 {
 	for (size_t i = f->left; i <= (f->left)+(f->width); ++i)
 	{
-		gotoxy(i, f->top);
+		gotoXY(i, f->top);
 		printf_s("#");
-		gotoxy(i, f->top + f->height);
+		gotoXY(i, f->top + f->height);
 		printf_s("#");
 	}
 	for (size_t i = f->top; i <= (f->top) + (f->height); ++i)
 	{
-		gotoxy(f->left, i);
+		gotoXY(f->left, i);
 		printf_s("#");
-		gotoxy(f->left + f->width, i);
+		gotoXY(f->left + f->width, i);
 		printf_s("#");
 	}
 }

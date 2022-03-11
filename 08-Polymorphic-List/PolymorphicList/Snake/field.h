@@ -1,13 +1,11 @@
 #pragma once
 
-struct Field
+typedef struct
 {
 	size_t left;
 	size_t top;
 	size_t width;
 	size_t height;
-};
-
-typedef struct Field field;
+} field;
 
 void drawField(field* f);

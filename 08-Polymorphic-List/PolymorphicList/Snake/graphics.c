@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void setconsolesize(int x, int y)
+void setConsoleSize(int x, int y)
 {
 	HANDLE hCons;
 	COORD crd;
@@ -18,7 +18,7 @@ void setconsolesize(int x, int y)
 	SetConsoleScreenBufferSize(hCons, crd);
 	SetConsoleWindowInfo(hCons, 1, &rct);
 }
-void hidecursor()
+void hideCursor()
 {
 	HANDLE hCons;
 	CONSOLE_CURSOR_INFO cci;
@@ -27,7 +27,7 @@ void hidecursor()
 	cci.bVisible = 0;
 	SetConsoleCursorInfo(hCons, &cci);
 }
-void clrscr()
+void clrScr()
 {
 	HANDLE hCons;
 	CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -45,7 +45,7 @@ void clrscr()
 	crd.Y = 0;
 	FillConsoleOutputCharacter(hCons, space, len, crd, &bRet);
 }
-void gotoxy(size_t column, size_t row)
+void gotoXY(size_t column, size_t row)
 {
 	HANDLE hCons;
 	COORD crd;
