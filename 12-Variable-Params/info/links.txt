@@ -1,0 +1,6 @@
+https://en.wikipedia.org/wiki/X86_calling_conventions
+https://docs.microsoft.com/ru-ru/cpp/cpp/cdecl?view=msvc-170
+https://docs.microsoft.com/ru-ru/cpp/build/x64-calling-convention?view=msvc-170
+
+stdarg example :
+https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/reference/va-arg-va-copy-va-end-va-start?view=msvc-170

@@ -1,0 +1,19 @@
+Contributor: A contributor is someone from the outside not on the core development team of the project that wants to contribute some changes to a project.
+Collaborator: A collaborator is someone on the core development team of the project and has commit access to the main repository of the project.
+Continue reading to learn about the workflow for both contributors and collaborators.
+https://github.com/CoolProp/CoolProp/wiki/Contributors-vs-Collaborators
+
+Invite collaborator on github:
+Ask for the username of the person you're inviting as a collaborator. ...
+On GitHub.com, navigate to the main page of the repository.
+Under your repository name, click Settings.
+In the "Access" section of the sidebar, click Collaborators & teams.
+Click Invite a collaborator.
+
+Make merge/pull request on github:
+Create fork from existing github repository.
+Clone forked origin to local repository.
+Make work (some changes).
+Commit changes.
+Push changes to your forked repository on github (your origin).
+Create pull request from web view.

@@ -4,7 +4,7 @@
 #include "tree.h"
 #include "stack.h"
 
-void addNode(node* root, int value)
+static void addNode(node* root, int value)
 {
 	node* current = root;
 	node* last = 0;
@@ -58,12 +58,8 @@ static void destroyNode(node* current)
 {
 	if (current->left != 0)
 		destroyNode(current->left);
-	else
-		free(current->left);
 	if (current->right != 0)
 		destroyNode(current->right);
-	else
-		free(current->right);
 	free(current);
 }
 void destroyTree(tree* t)

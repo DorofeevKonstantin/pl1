@@ -9,12 +9,10 @@ struct Node
 
 typedef struct Node node;
 
-struct Tree
+typedef struct
 {
 	node* root;
-};
-
-typedef struct Tree tree;
+} tree;
 
 tree* createTree();
 void generateTree(tree*, int*, int);
