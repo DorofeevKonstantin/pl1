@@ -92,7 +92,7 @@ void outputInorderStack(tree* t)
 		}
 		else
 		{
-			r = (node*)pop(s);
+			r = pop(s);
 			printf_s("%d ", r->value);
 			r = r->right;
 		}
