@@ -8,42 +8,42 @@
 static void outputArray(int* mass, int start, int end)
 {
 	for (int i = start; i < end; ++i)
-		printf("%d ", mass[i]);
-	printf("\n");
+		printf_s("%d ", mass[i]);
+	printf_s("\n");
 }
-void myQsortImpl(int* s_arr, int first, int last, int debug)
+void myQsortImpl(int* mass, int first, int last, int debug)
 {
 	if (first < last)
 	{
-		int left = first, right = last, middle = s_arr[(left + right) / 2];
+		int left = first, right = last, middle = mass[(left + right) / 2];
 		if (debug)
 		{
-			outputArray(s_arr, first, last + 1);
-			printf("left = %d , middle = %d , right = %d\n", s_arr[left], middle, s_arr[right]);
+			outputArray(mass, first, last + 1);
+			printf_s("left = %d , middle = %d , right = %d\n", mass[left], middle, mass[right]);
 		}
 		do
 		{
-			while (s_arr[left] < middle) left++;
-			while (s_arr[right] > middle) right--;
+			while (mass[left] < middle) left++;
+			while (mass[right] > middle) right--;
 			if (left <= right)
 			{
 				if (debug)
-					printf("swapping : %d <-> %d\n", s_arr[left], s_arr[right]);
-				int tmp = s_arr[left];
-				s_arr[left] = s_arr[right];
-				s_arr[right] = tmp;
+					printf_s("swapping : %d <-> %d\n", mass[left], mass[right]);
+				int tmp = mass[left];
+				mass[left] = mass[right];
+				mass[right] = tmp;
 				left++;
 				right--;
 			}
 		} while (left <= right);
 		if (debug)
 		{
-			outputArray(s_arr, first, last + 1);
-			printf("\n");
+			outputArray(mass, first, last + 1);
+			printf_s("\n");
 			_getch();
 		}
-		myQsortImpl(s_arr, first, right, debug);
-		myQsortImpl(s_arr, left, last, debug);
+		myQsortImpl(mass, first, right, debug);
+		myQsortImpl(mass, left, last, debug);
 	}
 }
 void myQsort(void* arr, size_t count, size_t sizeOfElem, _CoreCrtNonSecureSearchSortCompareFunction compareFun)

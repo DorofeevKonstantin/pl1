@@ -9,14 +9,12 @@ clock_t startTimeMeasure()
 	clock_t start = clock();
 	return start;
 }
-
 void stopTimeMeasure(clock_t start)
 {
 	clock_t end = clock();
 	double difference = (double)(end - start) / CLOCKS_PER_SEC;
 	printf_s("%d ms spended\n", (int)(difference * 1000));
 }
-
 void timeMeasurementExample()
 {
 	// START clock() or time()

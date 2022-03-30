@@ -54,6 +54,6 @@ int main()
 	srand((unsigned int)time(0));
 	/*for (size_t size = 500; size <= 2500; size += 1000)
 		testSortFunctions(size);*/
-	testSortFunctions(100000, 0);
+	testSortFunctions(50000, 0);
 	return 0;
 }
