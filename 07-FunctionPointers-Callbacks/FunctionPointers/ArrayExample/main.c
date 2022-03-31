@@ -19,7 +19,7 @@ int positive(int* value)
 }
 void output(int* value)
 {
-	printf("%d ", *value);
+	printf_s("%d ", *value);
 }
 void random(int* value)
 {
@@ -50,30 +50,27 @@ void forAllIf(int* mass, int size, FunPtr action, ConditionPtr condition)
 int main()
 {
 	int size = 10;
-
-	/*void (*f)(int*) = minus;
-	f(&size);*/
-
 	int* mass = (int*)malloc(size * sizeof(int));
 	srand((unsigned int)time(0));
 
 	forAll(mass, size, random);
 	forAll(mass, size, output);
-	printf("\n");
+	printf_s("\n");
 
 	/*forAll(mass, size, square);
 	forAll(mass, size, output);
-	printf("\n");
+	printf_s("\n");
 
 	minusValue = 5;
 	forAll(mass, size, minus);
 	forAll(mass, size, output);
-	printf("\n");*/
+	printf_s("\n");*/
 
 	forAllIf(mass, size, square, positive);
 	forAll(mass, size, output);
-	printf("\n");
+	printf_s("\n");
 
+	free(mass);
 	system("pause");
 	return 0;
 }

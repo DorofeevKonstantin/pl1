@@ -44,7 +44,8 @@ void testSortFunction(SortFunPtr fptr, size_t size, char* functionName, int debu
 }
 void testSortFunctions(size_t size, int debug)
 {
-	testSortFunction(bubbleSort, size, "bubble sort", debug);
+	printf_s("\ntest sort functions with size == %zu\n", size);
+	//testSortFunction(bubbleSort, size, "bubble sort", debug);
 	testSortFunction(myQsort, size, "myqsort", debug);
 	testSortFunction(qsort, size, "qsort", debug);
 }
@@ -52,8 +53,8 @@ void testSortFunctions(size_t size, int debug)
 int main()
 {
 	srand((unsigned int)time(0));
-	/*for (size_t size = 500; size <= 2500; size += 1000)
-		testSortFunctions(size);*/
-	testSortFunctions(50000, 0);
+	//for (size_t size = 5000; size <= 25000; size += 1000)
+	//	testSortFunctions(size, 0);
+	testSortFunctions(5000000, 0);
 	return 0;
 }
