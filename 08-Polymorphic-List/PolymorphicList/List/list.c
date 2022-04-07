@@ -83,7 +83,7 @@ void printList(list* l)
 	{
 		l->printDataFunction(current->value);
 		if (current->next != 0)
-			printf_s(" -> ");
+			printf_s(" <-> ");
 		current = current->next;
 	}
 	printf_s("\n");

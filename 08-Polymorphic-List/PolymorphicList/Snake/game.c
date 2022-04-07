@@ -89,7 +89,7 @@ void mainLoop(game* g)
 			int appleEaten = eatApple(&(g->snakes[i]), &(g->apple));
 			if (appleEaten)
 			{
-				saveOldTail(&(g->snakes[i]), &oldTailPosition);
+				pushOldTail(&(g->snakes[i]), &oldTailPosition);
 				generateApple(&(g->field), &(g->apple));
 				drawApple(&(g->apple));
 			}

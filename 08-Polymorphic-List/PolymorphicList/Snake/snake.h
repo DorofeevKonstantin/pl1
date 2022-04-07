@@ -16,7 +16,7 @@ void initSnake(snake*, coordinates*);
 void move(snake*);
 int eatApple(snake*, apple*);
 void findWay(snake*, apple*);
-void saveOldTail(snake*, coordinates*);
+void pushOldTail(snake*, coordinates*);
 void drawSnake(snake*);
 void drawSnakeHead(snake*);
 void destroySnake(snake*);

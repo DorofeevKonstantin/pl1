@@ -22,7 +22,6 @@ void coordinatesFree(void* data)
 {
 	free(data);
 }
-
 void initSnake(snake* s, coordinates* position)
 {
 	s->direction = right;
@@ -101,7 +100,7 @@ void findWay(snake* s, apple* apple)
 			s->direction = right;
 	}
 }
-void saveOldTail(snake* s, coordinates* oldTail)
+void pushOldTail(snake* s, coordinates* oldTail)
 {
 	pushBack(s->elements, (void*)oldTail);
 }
