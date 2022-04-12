@@ -1,0 +1,50 @@
+{
+ "options": [
+  [
+   "naive-tsearch:header_only",
+   "True"
+  ],
+  [
+   "ncurses:shared",
+   "False"
+  ],
+  [
+   "ncurses:with_cxx",
+   "True"
+  ],
+  [
+   "ncurses:with_extended_colors",
+   "True"
+  ],
+  [
+   "ncurses:with_pcre2",
+   "False"
+  ],
+  [
+   "ncurses:with_progs",
+   "True"
+  ],
+  [
+   "ncurses:with_reentrant",
+   "False"
+  ],
+  [
+   "ncurses:with_ticlib",
+   "auto"
+  ],
+  [
+   "ncurses:with_tinfo",
+   "auto"
+  ],
+  [
+   "ncurses:with_widec",
+   "True"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}

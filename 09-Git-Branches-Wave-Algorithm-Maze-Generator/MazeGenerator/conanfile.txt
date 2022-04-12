@@ -1,0 +1,5 @@
+[requires]
+ncurses/6.3
+
+[generators]
+cmake
