@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/kostuan/Downloads/mazeGenerator-master/conanbuild
+# Install script for directory: C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/09-Git-Branches-Wave-Algorithm-Maze-Generator/MazeGenerator/conanbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/kostuan/Downloads/mazeGenerator-master/conanbuild/cmakebuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/_main/_univer/Documents/Chelgu/PP/Prog/C/rep/09-Git-Branches-Wave-Algorithm-Maze-Generator/MazeGenerator/conanbuild/cmakebuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

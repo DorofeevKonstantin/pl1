@@ -1,6 +1,5 @@
-git branch unstable
-git checkout unstable
-
+git branch dev
+git checkout dev
 git checkout master
 
 Create the branch on your local machine and switch in this branch :
@@ -11,6 +10,10 @@ $ git push origin [name_of_your_new_branch]
 
 You can see all the branches created by using :
 $ git branch -a
+
+Слияние веток:
+git checkout master
+git merge dev // dev -> master
 
 Конфликты слияния (merge conflict).
 Для бинарных файлов: только выбрать версию А или Б (или другие, если octomerge).

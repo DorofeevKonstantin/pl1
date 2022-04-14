@@ -26,9 +26,7 @@ void Grid::generateMaze() {
   while (true) {
     current->setVisited(true);
     Cell *next = findNextCell();
-
     if (next != NULL) {
-      next->setVisited(true);
       backtrace.push(current);
       current->removeWalls(*next);
       current = next;

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kostuan\Downloads\mazeGenerator-master\conanbuild\cmakebuild\CMakeFiles\edc7749bef30b48cee815b9e7e6a4f98\generate.stamp.rule">
+    <CustomBuild Include="C:\_main\_univer\Documents\Chelgu\PP\Prog\C\rep\09-Git-Branches-Wave-Algorithm-Maze-Generator\MazeGenerator\conanbuild\cmakebuild\CMakeFiles\386e63650f3d7eab950e97cf7806ae3d\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{B6F7C217-D913-3C91-BFDB-98FD3AD204E5}</UniqueIdentifier>
+      <UniqueIdentifier>{8FDED49B-33E7-3267-BCE7-19F31181597B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
