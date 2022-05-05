@@ -3,6 +3,10 @@
 ullong fastPower(ullong base, ullong pow)
 {
 	ullong result = 1;
+	if (pow == 0)
+		return 1;
+	if (base == 0)
+		return 0;
 	while (pow)
 	{
 		if ((pow % 2) == 0)
@@ -18,7 +22,6 @@ ullong fastPower(ullong base, ullong pow)
 	}
 	return result;
 }
-
 int binarySearch(int* mass, int l, int r, int value)
 {
 	int pos = -1;
@@ -38,7 +41,6 @@ int binarySearch(int* mass, int l, int r, int value)
 	}
 	return pos;
 }
-
 int countVowels(const char* s)
 {
 	const char* position = s;
@@ -50,4 +52,18 @@ int countVowels(const char* s)
 		position++;
 	}
 	return vowels;
+}
+// bad implementation
+int myAtoi(const char* s)
+{
+	int result = 0;
+	for (int i = 0; s[i] != '\0'; ++i)
+	{
+		if (s[i] == '-')
+			continue;
+		result = result * 10 + s[i] - '0';
+	}
+	if (s[0] == '-')
+		result = -result;
+	return result;
 }
