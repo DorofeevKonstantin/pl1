@@ -1,0 +1,4 @@
+https://isocpp.org/std/the-standard
+https://en.cppreference.com/w/
+https://github.com/tilir/cpp-graduate
+https://sourceforge.net/projects/cpp-lects-rus/postdownload
