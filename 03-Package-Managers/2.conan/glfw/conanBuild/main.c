@@ -23,7 +23,7 @@ int main(int argc, char const* argv[])
         return -1;
 
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-    window = glfwCreateWindow(320, 320, "Rorate Cube", NULL, NULL);
+    window = glfwCreateWindow(320, 320, "Rotate Cube", NULL, NULL);
 
     if (!window)
     {
