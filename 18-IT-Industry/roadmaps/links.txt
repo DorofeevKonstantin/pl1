@@ -1,0 +1,3 @@
+https://github.com/kamranahmedse/developer-roadmap
+https://github.com/salmer/CppDeveloperRoadmap
+https://roadmap.sh/python
